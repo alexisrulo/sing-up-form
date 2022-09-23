@@ -4,65 +4,74 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="./styles.css" />
     <title>Laptops</title>
   </head>
   <body>
     <div class="main">
       <div class="left">
-        <div class="logo"><h1>oldegg</h1></div>
+        <div class="logo">
+          <h1><img src="./img/mountain.png" alt="an egg" />GIOVANI</h1>
+        </div>
+        <div class="credits"><a href="https://www.flaticon.com/free-icons/montain" title="montain icons" target="_blank">Icon </a>
+                            <a href="https://unsplash.com/es/fotos/W3DJSagu-a0?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" title="montain img" target="_blank">- Photo</a>
+        </div>
       </div>
       <div class="right">
         <div class="textInfo">
           <h2>
             This is no a real service, just for practice, with more than 5 years
-            in the technological field we are dedicated to the sale of
-            computers, laptops, hardware and peripheral products.
+            in this field we are dedicated to provide service in
+            something very important that does not matters now.
           </h2>
-          <h2>Sing-up to buy</h2>
+          <h3>Sing-up to buy</h3>
         </div>
-        <form action="#">
-          <legend>Let's do this!</legend>
+        <form action="#" class="form">
           <div class="textFields">
-            <fieldset>
-              <div>
-                <div class="textfield">
-                  <label for="name">First Name</label>
-                  <input type="text" id="name" />
-                </div>
-                <div class="textfield">
-                  <label for="lastName">Last Name</label>
-                  <input type="text" id="lastName" />
-                </div>
+            <legend>Let's do this!</legend>
+            <div class="twoInputs">
+              <div class="textfield">
+                <label for="name">First Name</label>
+                <input type="text" id="name" />
               </div>
-              <div>
-                <div class="textfield">
-                  <label for="email">E-Mail</label>
-                  <input type="email" id="email" />
-                </div>
-                <div class="textfield">
-                  <label for="telephone">Phone Number</label>
-                  <input type="tel" id="telephone" />
-                </div>
+              <div class="textfield">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" />
               </div>
-              <div>
-                <div class="textfield">
-                  <label for="password">Password</label>
-                  <input type="password" id="name" />
-                </div>
-                <div class="textfield">
-                  <label for="repeatPass">Repeat Password</label>
-                  <input type="password" id="repeatPass" />
-                </div>
+            </div>
+            <div class="twoInputs">
+              <div class="textfield">
+                <label for="email">E-Mail *</label>
+                <input type="email" id="email" required />
               </div>
-            </fieldset>
+              <div class="textfield">
+                <label for="telephone">Phone Number</label>
+                <input type="tel" id="telephone" />
+              </div>
+            </div>
+            <div class="twoInputs">
+              <div class="textfield">
+                <label for="password">Password *</label>
+                <input type="password" id="name" required />
+              </div>
+              <div class="textfield">
+                <label for="repeatPass">Repeat Password *</label>
+                <input type="password" id="repeatPass" required />
+              </div>
+            </div>
           </div>
           <div class="endField">
-            <button type="submit">Create Account</button>
-            <div>Already have an account? <a href="#">Log in</a></div>
+            <button type="submit" class="button">Create Account</button>
+            <div class="withAcount">
+              Already have an account? <a href="#">Log in</a>
+            </div>
           </div>
         </form>
       </div>
+      
     </div>
   </body>
 </html>
